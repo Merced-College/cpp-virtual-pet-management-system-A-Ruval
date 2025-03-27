@@ -59,3 +59,13 @@ void Pet::printInfo() const {
     std::cout << "Age: " << age << std::endl;
     std::cout << "Hunger Level: " << hungerLevel << "/10" << std::endl;
 }
+
+// Virtual Function Implementation
+void Pet::makeSound() const {
+    std::cout << name << " makes an undefined sound.\n";
+}
+
+// Virtual Destructor Implementation
+Pet::~Pet() {
+    std::cout << name << " is being destroyed.\n";
+}
